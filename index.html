@@ -197,7 +197,15 @@
                         <span class="sr-only">Next</span>
                     </a>
                     <!-- end carousel controls -->
-                </div><!-- end carousel -->
+                    <div id="carouselButton" class="btn-group">
+                        <button class="btn btn-danger btn-sm" id="carouselPause">
+                            <i class="fa fa-pause"> </i>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carouselPlay">
+                            <i class="fa fa-play"> </i>
+                        </button>
+                    </div>
+                </div><!-- end #homeCarousel -->
             </div>
         </div><!-- end carousel div -->
         <div class="row row-content align-items-center">
@@ -278,29 +286,8 @@
  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-
-<script>
-    const el1 = document.getElementById("siteTent");
-    el1.addEventListener("click", function() {
-        let checkedButton = document.getElementById("labelTent");
-        checkedButton.classList.remove("btn-primary");
-        checkedButton.classList.add("btn-success");
-        let uncheckedButton = document.getElementById("labelRV");
-        uncheckedButton.classList.remove("btn-success");
-        uncheckedButton.classList.add("btn-primary");
-    });
-
-    const el2 = document.getElementById("siteRV");
-    el2.addEventListener("click", function() {
-        let checkedButton = document.getElementById("labelRV");
-        checkedButton.classList.remove("btn-primary");
-        checkedButton.classList.add("btn-success");
-        let uncheckedButton = document.getElementById("labelTent");
-        uncheckedButton.classList.remove("btn-success");
-        uncheckedButton.classList.add("btn-primary");
-    });
-
-</script>
+<script src="js/main.js"></script>
+<script src="js/jquery.js"></script>
 </body>
 
 </html>
